@@ -80,6 +80,20 @@ npm run build
 npm start
 ```
 
+# Health Check
+
+A rota abaixo pode ser utilizada para verificar se o serviço está no ar:
+
+```ts
+app.get('/health', () => {
+  return 'ok';
+});
+```
+
+Acesse em: http://localhost:3333/health
+
+
+
 ## Estrutura do Projeto
 
 
