@@ -32,6 +32,41 @@ Execute o comando abaixo para iniciar o banco de dados PostgreSQL com a extensã
 docker compose up -d
 ```
 
+### Gerando as Migrations com Drizzle Kit
+
+Após configurar o banco e o schema, gere as migrations com:
+
+```sh
+npx drizzle-kit generate
+```
+Será criado na pasta src/db/migrations
+
+### Rodando as Migrations
+
+Para aplicar as migrations ao banco de dados, execute:
+
+```sh
+npx drizzle-kit migrate
+```
+
+### Rodando o Seed de Dados
+
+Para pré-popular o banco de dados com dados fictícios, execute:
+
+```sh
+npm run db:seed
+```
+
+### Acessando o Drizzle Studio
+
+Para visualizar e gerenciar o banco de dados de forma gráfica, utilize o Drizzle Studio:
+
+```sh
+npx drizzle-kit studio
+```
+
+Acesse o https://local.drizzle.studio
+
 ### Executando o Servidor
 
 ```sh
