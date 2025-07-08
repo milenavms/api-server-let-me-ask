@@ -80,7 +80,7 @@ npm run build
 npm start
 ```
 
-# Health Check
+#### Health Check
 
 A rota abaixo pode ser utilizada para verificar se o serviço está no ar:
 
